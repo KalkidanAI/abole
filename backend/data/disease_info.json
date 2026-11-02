@@ -1,0 +1,128 @@
+{
+  "classes": {
+    "Cercospora": {
+      "name": "Cercospora",
+      "scientific_name": "Cercospora coffeicola (Mycosphaerella coffeicola)",
+      "description": "A fungal disease causing brown eye spot or Cercospora leaf spot on coffee plants. The pathogen produces cercosporin, a photoactivated toxin that damages leaf tissue. Favored by warm, humid conditions (20-28C with 36-72 hours of continuous wetness).",
+      "symptoms": [
+        "Chlorotic (yellow) spots that expand into deep brown necrotic lesions",
+        "Light-colored centers where sporulation occurs",
+        "Yellow halo around lesion margins caused by cercosporin toxin",
+        "Lesions may fuse to form large irregular areas of necrotic tissue",
+        "Leaf drop in extreme cases"
+      ],
+      "management_practices": [
+        "Prune branches to improve air circulation and reduce leaf wetness",
+        "Maintain balanced soil nutrition (avoid both deficiency and excess nitrogen)",
+        "Ensure proper drainage to minimize humidity",
+        "Apply copper-based fungicides during flowering and dry weather",
+        "Space plants adequately (e.g., 8 ft x 8 ft) to reduce plant stress"
+      ],
+      "ethiopian_context": "Literature suggests Cercospora is not a significant problem in Ethiopia and Uganda, Africa's top coffee-producing countries. However, monitoring is still recommended as climate conditions change.",
+      "citations": [
+        "Nelson, S. (2008). Cercospora Leaf Spot and Berry Blotch of Coffee. University of Hawaii at Manoa, CTAHR.",
+        "Gaitan, A.L. (2015). Compendium of Coffee Diseases and Pests. APS Press. pp. 27-28.",
+        "Waller, J.M., Bigger, M., Hillocks, R.J. (2007). Coffee Pests, Diseases & Their Management. CABI."
+      ]
+    },
+    "Healthy": {
+      "name": "Healthy",
+      "scientific_name": "N/A - No pathogen detected",
+      "description": "No disease symptoms detected on the leaf. The leaf shows normal coloration and tissue integrity without lesions, spots, pustules, or mining patterns.",
+      "symptoms": [
+        "Uniform green leaf coloration",
+        "No lesions, spots, or discoloration",
+        "No powdery growths or pustules on either leaf surface",
+        "No tunneling or mining patterns visible",
+        "Normal leaf turgor and texture"
+      ],
+      "management_practices": [
+        "Continue regular monitoring for early disease detection",
+        "Maintain balanced nutrition, particularly nitrogen and potassium",
+        "Ensure proper plant spacing and pruning for air circulation",
+        "Manage shade levels appropriate to the growing region",
+        "Implement integrated pest management practices"
+      ],
+      "ethiopian_context": "Ethiopia is the birthplace of Coffea arabica. Healthy coffee plants in Ethiopia's highland regions (1,500-2,200m elevation) benefit from the cool, misty conditions, but climate change is increasing disease pressure.",
+      "citations": [
+        "Tadesse, T. et al. (2020). Coffee production constraints and opportunities at major growing districts of southern Ethiopia. Cogent Food & Agriculture.",
+        "Kew Royal Botanic Gardens. Building a climate resilient coffee economy for Ethiopia."
+      ]
+    },
+    "Leaf Rust": {
+      "name": "Leaf Rust",
+      "scientific_name": "Hemileia vastatrix",
+      "description": "Coffee leaf rust (CLR) is one of the most economically important coffee diseases worldwide. The fungus reduces the plant's photosynthetic ability by covering leaves with spores and causing defoliation. The pathogen is believed to have East African origin. Optimal development occurs at 16-28C with free water on leaves.",
+      "symptoms": [
+        "Yellow-orange powdery pustules on the underside of leaves",
+        "Chlorotic or pale yellow spots on the upper leaf surface",
+        "Lesions expand from small points (~0.1mm) to several centimeters",
+        "Defoliation in severe infections",
+        "Reduced flower and fruit production"
+      ],
+      "management_practices": [
+        "Plant resistant cultivars where available (most effective long-term strategy)",
+        "Apply copper-based fungicides such as Bordeaux mixture as preventative treatment",
+        "Prune to improve air circulation and reduce leaf wetness",
+        "Maintain adequate nitrogen and potassium nutrition for plant resistance",
+        "Remove infected leaves to reduce inoculum",
+        "Increase spacing between rows to improve air circulation"
+      ],
+      "ethiopian_context": "Coffee leaf rust is believed to have originated in the highlands of Ethiopia, Sudan, and Kenya. It was first reported in the 1860s from Kenya. As climate change increases temperatures and alters rainfall patterns in Ethiopia, rust pressure is expected to increase.",
+      "citations": [
+        "Talhinhas, P. et al. (2017). The coffee leaf rust pathogen Hemileia vastatrix: one and a half centuries around the tropics. Molecular Plant Pathology 18(8): 1039-1051.",
+        "Kushalappa, A.C. (2017). Coffee Rust. CRC Press.",
+        "Waller, J.M., Bigger, M., Hillocks, R.J. (2007). Coffee Pests, Diseases & Their Management. CABI."
+      ]
+    },
+    "Miner": {
+      "name": "Miner",
+      "scientific_name": "Leucoptera coffeella",
+      "description": "The coffee leaf miner is a moth whose larvae feed on coffee leaf tissue, creating characteristic tunnels or mines. It is considered one of the worst pest species of coffee in the Americas. The adult moth has a wingspan of approximately 6.5mm.",
+      "symptoms": [
+        "Visible tunnels or mines in the leaf tissue",
+        "Brown or discolored serpentine patterns on the leaf surface",
+        "Damaged leaf areas may turn brown and necrotic",
+        "Reduced photosynthetic capacity in heavily mined leaves",
+        "Leaf drop in severe infestations"
+      ],
+      "management_practices": [
+        "Monitor populations regularly to detect early infestations",
+        "Encourage natural predators such as social wasps (Protonectarina sylveirae, Synoeca cyanea)",
+        "Apply targeted insecticide only when pest thresholds are exceeded",
+        "Remove and destroy heavily infested leaves",
+        "Maintain field sanitation to reduce overwintering sites"
+      ],
+      "ethiopian_context": "Coffee leaf miner is primarily reported as a major problem in the Americas. In Ethiopia, monitoring is recommended as pest ranges may shift with changing climate conditions.",
+      "citations": [
+        "Fernandes, F.L. et al. (2013). Selectivity of old and new organophosphate insecticides and behavior of Vespidae predators in coffee crop. Sociobiology 60(4): 471-476.",
+        "Waller, J.M., Bigger, M., Hillocks, R.J. (2007). Coffee Pests, Diseases & Their Management. CABI."
+      ]
+    },
+    "Phoma": {
+      "name": "Phoma",
+      "scientific_name": "Phoma costaricensis",
+      "description": "A soil fungus that infects the leaves and fruits of coffee plants prior to fruit ripening. Less extensively documented than other coffee diseases, but can cause significant damage under favorable conditions.",
+      "symptoms": [
+        "Lesions on leaves and developing fruits",
+        "Infection occurs before fruit ripening",
+        "Sunken, discolored spots on affected tissue",
+        "May lead to berry drop in severe cases"
+      ],
+      "management_practices": [
+        "Implement cultural practices including proper plant spacing",
+        "Remove and destroy infected plant material",
+        "Ensure adequate air circulation through pruning",
+        "Avoid excessive moisture around the base of plants",
+        "Monitor soil health and drainage conditions"
+      ],
+      "ethiopian_context": "Specific data on Phoma incidence in Ethiopian coffee is limited. General cultural management practices are recommended, and monitoring should be maintained as part of integrated disease management.",
+      "citations": [
+        "Echandi, E. (1957). Original species description of Phoma costaricensis.",
+        "Novtahaning, D. et al. (2022). Deep Learning Ensemble-Based Automated and High-Performing Recognition of Coffee Leaf Disease. Agriculture 12(11): 1909.",
+        "Gaitan, A.L. (2015). Compendium of Coffee Diseases and Pests. APS Press."
+      ]
+    }
+  },
+  "disclaimer": "This is AI-assisted analysis, not a confirmed diagnosis. Consult a qualified agronomist or plant pathologist for confirmation and treatment recommendations."
+}

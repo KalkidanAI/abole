@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - API_KEY=dr-buna-demo-key-change-me
+      - DEMO_MODE=true
+    volumes:
+      - ./model:/app/../model:ro
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
