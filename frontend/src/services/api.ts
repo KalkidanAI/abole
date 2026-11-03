@@ -1,8 +1,7 @@
 import axios from 'axios';
 import type { PredictionResponse, HealthResponse } from '../types';
 
-// Use proxy in development, or full URL from env in production
-const API_URL = import.meta.env.VITE_API_URL || '/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const API_KEY = import.meta.env.VITE_API_KEY || 'dr-buna-demo-key-change-me';
 
 export async function predictImage(file: File): Promise<PredictionResponse> {
