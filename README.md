@@ -86,7 +86,7 @@ curl http://localhost:8000/health
 ### Predict Disease
 ```bash
 curl -X POST http://localhost:8000/predict \
-  -H "X-API-Key: dr-buna-demo-key-change-me" \
+  -H "X-API-Key: abole-demo-key-change-me" \
   -F "file=@coffee_leaf.jpg"
 ```
 

@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     )
 
     # --- API Authentication ---
-    API_KEY: str = "dr-buna-demo-key-change-me"
+    API_KEY: str = "abole-demo-key-change-me"
 
     # --- Model Paths ---
     MODEL_PATH: str = str(Path(__file__).resolve().parent.parent.parent / "model" / "efficientnet_b0_coffee.onnx")

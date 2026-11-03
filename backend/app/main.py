@@ -16,6 +16,7 @@ from app.core.exceptions import (
 )
 from app.services.disease_info import disease_info_service
 from app.services.inference import inference_service
+from app.api.routes import router
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -50,7 +51,5 @@ async def startup_event():
     logger.info(f"Demo mode: {inference_service.is_demo}")
     logger.info(f"Model loaded: {inference_service.model_loaded}")
 
-
-from app.api.routes import router
 
 app.include_router(router, tags=["Coffee Leaf Disease Detection"])
