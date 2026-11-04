@@ -1,8 +1,8 @@
-"""ONNX inference service for coffee leaf disease detection."""
+﻿"""ONNX inference service for coffee leaf disease detection."""
 import json
 import logging
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 import numpy as np
 
@@ -13,10 +13,12 @@ logger = logging.getLogger(__name__)
 DEFAULT_CLASS_NAMES = ["Cercospora", "Healthy", "Leaf Rust", "Miner", "Phoma"]
 
 
-def softmax(logits: np.ndarray, axis: int = -1) -> np.ndarray:
-    shifted = logits - np.max(logits, axis=axis, keepdims=True)
+def softmax(logits: np.ndarray) -> np.ndarray:
+    """Compute softmax over a 1D array."""
+    logits = logits.flatten()
+    shifted = logits - np.max(logits)
     exp_vals = np.exp(shifted)
-    return exp_vals / np.sum(exp_vals, axis=axis, keepdims=True)
+    return exp_vals / np.sum(exp_vals)
 
 
 class InferenceService:
@@ -68,17 +70,19 @@ class InferenceService:
     def predict(self, input_array: np.ndarray) -> Tuple[str, float, List[Tuple[str, float]], bool]:
         if self.model_loaded and self.session is not None:
             outputs = self.session.run([self.output_name], {self.input_name: input_array})
-            logits = outputs[0]
-            probs = softmax(logits, axis=-1)[0]
+            logits = outputs[0].flatten()
         else:
-            np.random.seed(int(np.sum(input_array) * 1000) % (2**32))
-            logits = np.random.randn(len(self.class_names)).astype(np.float32) * 2
-            probs = softmax(logits)[0]
+            # Demo mode: generate deterministic placeholder predictions
+            seed = int(abs(float(np.sum(input_array))) * 100) % (2 ** 31)
+            rng = np.random.RandomState(seed)
+            logits = rng.randn(len(self.class_names)).astype(np.float32) * 2.0
+
+        probs = softmax(logits)  # shape: (n_classes,)
 
         sorted_indices = np.argsort(probs)[::-1]
-        all_probs = [(self.class_names[i], float(probs[i])) for i in sorted_indices]
-        predicted_class = self.class_names[sorted_indices[0]]
-        confidence = float(probs[sorted_indices[0]])
+        all_probs = [(self.class_names[int(i)], float(probs[int(i)])) for i in sorted_indices]
+        predicted_class = self.class_names[int(sorted_indices[0])]
+        confidence = float(probs[int(sorted_indices[0])])
 
         return predicted_class, confidence, all_probs, self.is_demo
 
